@@ -8,8 +8,8 @@ from policies import tabular_random_uniform_policy
 import time
 
 if __name__ == "__main__":
-    t1 = time()
+    t1 = time.time()
     V, Pi = value_iteration(S, A, P, T)
     print(V)
     print(Pi)
-    print(f"time : {time() - t1}")
+    print(f"time : {time.time() - t1}")
